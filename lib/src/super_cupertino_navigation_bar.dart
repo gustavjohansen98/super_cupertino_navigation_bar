@@ -728,6 +728,7 @@ class _SuperScaffoldState extends State<SuperScaffold> {
                                               Flexible(
                                                 child: Focus(
                                                   onFocusChange: (hasFocus) {
+                                                    print('hasFocus: $hasFocus\nisSubmitted: $isSubmitted');
                                                     if (isSubmitted) {
                                                       isSubmitted = false;
                                                       return;
