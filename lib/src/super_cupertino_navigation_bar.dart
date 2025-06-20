@@ -727,14 +727,17 @@ class _SuperScaffoldState extends State<SuperScaffold> {
                                             children: [
                                               Flexible(
                                                 child: Focus(
-                                                  onFocusChange: (hasFocus) {
-                                                    print('hasFocus: $hasFocus\nisSubmitted: $isSubmitted');
-                                                    if (isSubmitted) {
+                                                  onFocusChange: (hasFocus) 
+                                                  {
+                                                    // print('\nhasFocus: $hasFocus\nisSubmitted: $isSubmitted\n');
+
+                                                    if (isSubmitted) 
+                                                    {
                                                       isSubmitted = false;
                                                       return;
                                                     }
-                                                    searchBarFocusThings(
-                                                        hasFocus);
+
+                                                    searchBarFocusThings(hasFocus);
                                                     setState(() {});
                                                   },
                                                   child:
