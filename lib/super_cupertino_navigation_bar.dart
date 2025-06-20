@@ -8,3 +8,4 @@ export 'models/super_search_bar_action.model.dart';
 export 'src/super_cupertino_navigation_bar.dart';
 export 'utils/store.dart' show Store, SearchBarAnimationStatus;
 export 'super_cupertino_navigation_bar.dart';
+export 'super_cupertino_navigation_bar.dart' show superScaffoldKey;
