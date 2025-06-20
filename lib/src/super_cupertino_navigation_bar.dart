@@ -15,6 +15,9 @@ import 'package:super_cupertino_navigation_bar/utils/persistent_nav_bar.dart';
 import 'package:super_cupertino_navigation_bar/utils/store.dart';
 import 'package:super_cupertino_navigation_bar/utils/transitionable_navigation_bar.dart';
 
+final GlobalKey<_SuperScaffoldState> superScaffoldKey =
+    GlobalKey<_SuperScaffoldState>();
+
 class SuperScaffold extends StatefulWidget {
   SuperScaffold({
     Key? key,
@@ -1008,6 +1011,12 @@ class _SuperScaffoldState extends State<SuperScaffold> {
         ),
       ),
     );
+  }
+
+  void cancelClick() {
+    searchBarFocusThings(false);
+    _focusNode.unfocus();
+    _editingController.clear();
   }
 
   void searchBarFocusThings(bool hasFocus) {
